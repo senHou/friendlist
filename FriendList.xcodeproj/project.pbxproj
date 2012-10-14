@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A67135AE15096E94003FD736 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67135AD15096E94003FD736 /* UIKit.framework */; };
+		A67135B015096E94003FD736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67135AF15096E94003FD736 /* Foundation.framework */; };
+		A67135B215096E94003FD736 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67135B115096E94003FD736 /* CoreGraphics.framework */; };
+		A67135B415096E94003FD736 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67135B315096E94003FD736 /* CoreData.framework */; };
+		A67135BA15096E94003FD736 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67135B815096E94003FD736 /* InfoPlist.strings */; };
+		A67135BC15096E94003FD736 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67135BB15096E94003FD736 /* main.m */; };
+		A67135C015096E94003FD736 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67135BF15096E94003FD736 /* AppDelegate.m */; };
+		A67135C315096E94003FD736 /* FriendList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A67135C115096E94003FD736 /* FriendList.xcdatamodeld */; };
+		A67135CC1509717B003FD736 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = A67135CB1509717B003FD736 /* Friend.m */; };
+		A67135CF15097340003FD736 /* FriendManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A67135CE15097340003FD736 /* FriendManager.m */; };
+		A67135D215097B26003FD736 /* FriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67135D115097B26003FD736 /* FriendListController.m */; };
+		A67135DC15097F54003FD736 /* AddFriendView.m in Sources */ = {isa = PBXBuildFile; fileRef = A67135DB15097F54003FD736 /* AddFriendView.m */; };
+		A67135EB1509BC8E003FD736 /* DisplayFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67135EA1509BC8E003FD736 /* DisplayFriendViewController.m */; };
+		A6D25B5C150EFE8C00C4E542 /* EditFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D25B5B150EFE8C00C4E542 /* EditFriendController.m */; };
+		A6D25B65150F3D7500C4E542 /* FriendData.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D25B64150F3D7500C4E542 /* FriendData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A67135A915096E94003FD736 /* FriendList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67135AD15096E94003FD736 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A67135AF15096E94003FD736 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A67135B115096E94003FD736 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A67135B315096E94003FD736 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A67135B715096E94003FD736 /* FriendList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FriendList-Info.plist"; sourceTree = "<group>"; };
+		A67135B915096E94003FD736 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A67135BB15096E94003FD736 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A67135BD15096E94003FD736 /* FriendList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FriendList-Prefix.pch"; sourceTree = "<group>"; };
+		A67135BE15096E94003FD736 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A67135BF15096E94003FD736 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A67135C215096E94003FD736 /* FriendList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendList.xcdatamodel; sourceTree = "<group>"; };
+		A67135CA1509717B003FD736 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Friend.h; path = FriendList/Friend.h; sourceTree = "<group>"; };
+		A67135CB1509717B003FD736 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Friend.m; path = FriendList/Friend.m; sourceTree = "<group>"; };
+		A67135CD15097340003FD736 /* FriendManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendManager.h; sourceTree = "<group>"; };
+		A67135CE15097340003FD736 /* FriendManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendManager.m; sourceTree = "<group>"; };
+		A67135D015097B26003FD736 /* FriendListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListController.h; sourceTree = "<group>"; };
+		A67135D115097B26003FD736 /* FriendListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListController.m; sourceTree = "<group>"; };
+		A67135DA15097F54003FD736 /* AddFriendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendView.h; sourceTree = "<group>"; };
+		A67135DB15097F54003FD736 /* AddFriendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendView.m; sourceTree = "<group>"; };
+		A67135E91509BC8E003FD736 /* DisplayFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayFriendViewController.h; sourceTree = "<group>"; };
+		A67135EA1509BC8E003FD736 /* DisplayFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayFriendViewController.m; sourceTree = "<group>"; };
+		A6D25B5A150EFE8C00C4E542 /* EditFriendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendController.h; sourceTree = "<group>"; };
+		A6D25B5B150EFE8C00C4E542 /* EditFriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendController.m; sourceTree = "<group>"; };
+		A6D25B63150F3D7500C4E542 /* FriendData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendData.h; path = ../FriendData.h; sourceTree = "<group>"; };
+		A6D25B64150F3D7500C4E542 /* FriendData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendData.m; path = ../FriendData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A67135A615096E94003FD736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67135AE15096E94003FD736 /* UIKit.framework in Frameworks */,
+				A67135B015096E94003FD736 /* Foundation.framework in Frameworks */,
+				A67135B215096E94003FD736 /* CoreGraphics.framework in Frameworks */,
+				A67135B415096E94003FD736 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A671359E15096E94003FD736 = {
+			isa = PBXGroup;
+			children = (
+				A67135B515096E94003FD736 /* FriendList */,
+				A67135C915097142003FD736 /* Resources */,
+				A67135AC15096E94003FD736 /* Frameworks */,
+				A67135AA15096E94003FD736 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A67135AA15096E94003FD736 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A67135A915096E94003FD736 /* FriendList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A67135AC15096E94003FD736 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A67135AD15096E94003FD736 /* UIKit.framework */,
+				A67135AF15096E94003FD736 /* Foundation.framework */,
+				A67135B115096E94003FD736 /* CoreGraphics.framework */,
+				A67135B315096E94003FD736 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A67135B515096E94003FD736 /* FriendList */ = {
+			isa = PBXGroup;
+			children = (
+				A67135BE15096E94003FD736 /* AppDelegate.h */,
+				A67135BF15096E94003FD736 /* AppDelegate.m */,
+				A67135D015097B26003FD736 /* FriendListController.h */,
+				A67135D115097B26003FD736 /* FriendListController.m */,
+				A67135DA15097F54003FD736 /* AddFriendView.h */,
+				A67135DB15097F54003FD736 /* AddFriendView.m */,
+				A67135E91509BC8E003FD736 /* DisplayFriendViewController.h */,
+				A67135EA1509BC8E003FD736 /* DisplayFriendViewController.m */,
+				A6D25B5A150EFE8C00C4E542 /* EditFriendController.h */,
+				A6D25B5B150EFE8C00C4E542 /* EditFriendController.m */,
+				A6D25B63150F3D7500C4E542 /* FriendData.h */,
+				A6D25B64150F3D7500C4E542 /* FriendData.m */,
+				A67135C115096E94003FD736 /* FriendList.xcdatamodeld */,
+				A67135B615096E94003FD736 /* Supporting Files */,
+			);
+			path = FriendList;
+			sourceTree = "<group>";
+		};
+		A67135B615096E94003FD736 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A67135B715096E94003FD736 /* FriendList-Info.plist */,
+				A67135B815096E94003FD736 /* InfoPlist.strings */,
+				A67135BB15096E94003FD736 /* main.m */,
+				A67135BD15096E94003FD736 /* FriendList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A67135C915097142003FD736 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A67135CA1509717B003FD736 /* Friend.h */,
+				A67135CB1509717B003FD736 /* Friend.m */,
+				A67135CD15097340003FD736 /* FriendManager.h */,
+				A67135CE15097340003FD736 /* FriendManager.m */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A67135A815096E94003FD736 /* FriendList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67135C615096E94003FD736 /* Build configuration list for PBXNativeTarget "FriendList" */;
+			buildPhases = (
+				A67135A515096E94003FD736 /* Sources */,
+				A67135A615096E94003FD736 /* Frameworks */,
+				A67135A715096E94003FD736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FriendList;
+			productName = FriendList;
+			productReference = A67135A915096E94003FD736 /* FriendList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A67135A015096E94003FD736 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A67135A315096E94003FD736 /* Build configuration list for PBXProject "FriendList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A671359E15096E94003FD736;
+			productRefGroup = A67135AA15096E94003FD736 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A67135A815096E94003FD736 /* FriendList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A67135A715096E94003FD736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67135BA15096E94003FD736 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A67135A515096E94003FD736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67135BC15096E94003FD736 /* main.m in Sources */,
+				A67135C015096E94003FD736 /* AppDelegate.m in Sources */,
+				A67135C315096E94003FD736 /* FriendList.xcdatamodeld in Sources */,
+				A67135CC1509717B003FD736 /* Friend.m in Sources */,
+				A67135CF15097340003FD736 /* FriendManager.m in Sources */,
+				A67135D215097B26003FD736 /* FriendListController.m in Sources */,
+				A67135DC15097F54003FD736 /* AddFriendView.m in Sources */,
+				A67135EB1509BC8E003FD736 /* DisplayFriendViewController.m in Sources */,
+				A6D25B5C150EFE8C00C4E542 /* EditFriendController.m in Sources */,
+				A6D25B65150F3D7500C4E542 /* FriendData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A67135B815096E94003FD736 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67135B915096E94003FD736 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A67135C415096E94003FD736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A67135C515096E94003FD736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A67135C715096E94003FD736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FriendList/FriendList-Prefix.pch";
+				INFOPLIST_FILE = "FriendList/FriendList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A67135C815096E94003FD736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FriendList/FriendList-Prefix.pch";
+				INFOPLIST_FILE = "FriendList/FriendList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A67135A315096E94003FD736 /* Build configuration list for PBXProject "FriendList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67135C415096E94003FD736 /* Debug */,
+				A67135C515096E94003FD736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67135C615096E94003FD736 /* Build configuration list for PBXNativeTarget "FriendList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67135C715096E94003FD736 /* Debug */,
+				A67135C815096E94003FD736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A67135C115096E94003FD736 /* FriendList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A67135C215096E94003FD736 /* FriendList.xcdatamodel */,
+			);
+			currentVersion = A67135C215096E94003FD736 /* FriendList.xcdatamodel */;
+			path = FriendList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A67135A015096E94003FD736 /* Project object */;
+}
