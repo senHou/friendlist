@@ -68,7 +68,6 @@
     addFriendView.fManager = self.fManager;
     [self presentModalViewController:navigationController animated:YES];
     [navigationController release];
-    
 }
 
 

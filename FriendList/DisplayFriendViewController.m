@@ -123,6 +123,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    
     return 4;
 }
 
@@ -224,12 +225,47 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    
+    NSLog(@"%i",[indexPath row]);
+    
+    if ([indexPath row] == 3){
+//        SendEmailController *sendEmailController = [[SendEmailController alloc] initWithNibName:@"SendEmailController" bundle:nil];
+//        [sendEmailController setEmail:[emailField text]];
+//        [self presentModalViewController:sendEmailController animated:YES];
+        
+        [self openMail];
+    }
      // ...
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    //[self.navigationController pushViewController:sendEmailController animated:YES];
+     
+}
+
+- (void)openMail{
+    if ([MFMailComposeViewController canSendMail])
+    {
+        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+        mailer.mailComposeDelegate = self;
+        [mailer setSubject:@""];
+        NSArray *toRecipients = [NSArray arrayWithObjects:[emailField text], nil];
+        [mailer setToRecipients:toRecipients];
+        //UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
+        //NSData *imageData = UIImagePNGRepresentation(myImage);
+        //[mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
+        NSString *emailBody = @"";
+        [mailer setMessageBody:emailBody isHTML:NO];
+        [self presentModalViewController:mailer animated:YES];
+        [mailer release];
+    }
+    else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
+                                                        message:@"Your device doesn't support the composer sheet"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
 }
 
 -(UITextField*) makeTextField: (NSString*)text{
@@ -243,6 +279,30 @@
 	tf.textColor = [UIColor colorWithRed:56.0f/255.0f green:84.0f/255.0f blue:135.0f/255.0f alpha:1.0f]; 	
 	return tf ;
 }
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued.");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved: you saved the email message in the drafts folder.");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail send: the email message is queued in the outbox. It is ready to send.");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail failed: the email message was not saved or queued, possibly due to an error.");
+            break;
+        default:
+            NSLog(@"Mail not sent.");
+            break;
+    }
+    // Remove the mail view
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 
 -(void) dealloc {
     [super dealloc];

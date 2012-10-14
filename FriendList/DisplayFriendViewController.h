@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Friend.h"
 #import "EditFriendController.h"
+#import <MessageUI/MessageUI.h>
+
 
 @protocol FinishedEditFriendDelegate <NSObject>
 
@@ -16,7 +18,7 @@
 
 @end
 
-@interface DisplayFriendViewController : UITableViewController <UITextFieldDelegate,EditFriendDelegate>{
+@interface DisplayFriendViewController : UITableViewController <UITextFieldDelegate,EditFriendDelegate,MFMailComposeViewControllerDelegate>{
     
     UITextField *firstNameField;
     UITextField *lastNameField;
@@ -34,5 +36,5 @@
 
 // Creates a textfield with the specified text and placeholder text
 -(UITextField*) makeTextField: (NSString*)text;
-
+- (void)openMail;
 @end

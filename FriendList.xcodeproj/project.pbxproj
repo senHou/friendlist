@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A651ADEF162A952E0036EFB9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A651ADEE162A952E0036EFB9 /* MessageUI.framework */; };
 		A67135AE15096E94003FD736 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67135AD15096E94003FD736 /* UIKit.framework */; };
 		A67135B015096E94003FD736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67135AF15096E94003FD736 /* Foundation.framework */; };
 		A67135B215096E94003FD736 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67135B115096E94003FD736 /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A651ADEE162A952E0036EFB9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A67135A915096E94003FD736 /* FriendList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67135AD15096E94003FD736 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A67135AF15096E94003FD736 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A651ADEF162A952E0036EFB9 /* MessageUI.framework in Frameworks */,
 				A67135AE15096E94003FD736 /* UIKit.framework in Frameworks */,
 				A67135B015096E94003FD736 /* Foundation.framework in Frameworks */,
 				A67135B215096E94003FD736 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +92,7 @@
 		A67135AC15096E94003FD736 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A651ADEE162A952E0036EFB9 /* MessageUI.framework */,
 				A67135AD15096E94003FD736 /* UIKit.framework */,
 				A67135AF15096E94003FD736 /* Foundation.framework */,
 				A67135B115096E94003FD736 /* CoreGraphics.framework */,
